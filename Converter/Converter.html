@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sensitivity Converter</title>
+    <link rel="stylesheet" href="cstyle.css">
+  </head>
+  <body>
+    <h1>Sensitivity Converter</h1>
+    <form>
+      <label for="sensitivity">Sensitivity:</label>
+      <input type="number" id="sensitivity" name="sensitivity" step="0.01" required>
+
+      <label for="fromGame">From Game:</label>
+      <select id="fromGame" name="fromGame">
+        <option value="valorant">Valorant</option>
+        <option value="csgo">CS:GO</option>
+        <option value="overwatch">Overwatch</option>
+      </select>
+
+      <label for="toGame">To Game:</label>
+      <select id="toGame" name="toGame">
+        <option value="valorant">Valorant</option>
+        <option value="csgo">CS:GO</option>
+        <option value="overwatch">Overwatch</option>
+      </select>
+
+      <button type="submit" id="convertBtn">Convert</button>
+    </form>
+
+    <div id="results"></div>
+
+    <script src="cscript.js"></script>
+  </body>
+</html>
